@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url(/public/filmstrip_background.jpg);
+  background-size: cover;
+}
+.App{
+  margin:0;
+}
+/* styling navbar header */
+.App-header{
+  margin:0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* .mb-3{
+  margin-top:-50px;
+ 
+  height: 50px;
+} */
+.me-2{
+  height:40px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
+.btn-outline-success{
+  height: 40px !important;
+  width: 150px;
+  font-size: 15px;
+}
+/* styling main */
+main{
+  margin:auto;
+  width:90%;
+}
+/* styling cardmovies */
+.movieList{
+  display:flex;
+  flex-wrap: wrap;
+  margin:50px auto;
+  justify-content: space-between;
+ 
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+ 
+}
+.card-title{
+margin:20%
+}
+.list-group-item{
+  margin-left: 10px;
+  text-align:justify;
+ text-justify:initial;
+}
+.react-stars{
+  margin-left: 25%;
+}
+.moviecard{
+  opacity:0.95;
+  margin:20px ;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  width:250px;
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
+.card{
+  height:200px;
+}
+.moviecard >*{
+  margin:20px 10%;
+}
+.moviecard :hover{
+  box-shadow: 5px 5px 5px 0px greenyellow;
+  cursor: pointer;
+  opacity:0.6;
+
+ 
+  }
+  .movieadd{
+    margin-top:-50px;
+    position:fixed;
+    z-index: 1;
+    width:100%;
+    justify-content: space-between;
+    margin-right:20px;
+    
+
+  }
+  
