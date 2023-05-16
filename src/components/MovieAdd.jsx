@@ -10,6 +10,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import ReactStars from "react-rating-stars-component";
+
 // the main of the compoent a function that have three props add, search by title and search by rate
 const MovieAdd = ({funcAdd,setSearchTitle,setSearchRate}) => {
   const [show, setShow] = useState(false);
@@ -95,14 +96,24 @@ const MovieAdd = ({funcAdd,setSearchTitle,setSearchRate}) => {
             <Form.Control as="textarea" rows={3} placeholder="Description"   onChange={(e)=>setNewMovie({...newMovie, description:e.target.value})}/>
           </Form.Group>
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-            <Form.Label>Image</Form.Label>
+            <Form.Label>Image copier l'adresse de l'image</Form.Label>
             <Form.Control
               type="text"
+              
               placeholder="URL image"
               autoFocus
               onChange={(e)=>setNewMovie({...newMovie, posterURL:e.target.value})}
             />
           </Form.Group>
+          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+          <Form.Label>Link Trailer Copier src sans guillemet</Form.Label>
+          <Form.Control
+            type="text"
+            placeholder="Link Trailer"
+            autoFocus
+            onChange={(e)=>setNewMovie({...newMovie, tadhmin:e.target.value})}
+          />
+        </Form.Group>
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
             <Form.Label>Rating</Form.Label>
             <Form.Control

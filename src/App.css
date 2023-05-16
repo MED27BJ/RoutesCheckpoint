@@ -69,7 +69,13 @@ margin:20%
 }
 .moviecard >*{
   margin:20px 10%;
+ 
 }
+.movieList a{
+ 
+  text-decoration:none;
+}
+
 .moviecard :hover{
   box-shadow: 5px 5px 5px 0px greenyellow;
   cursor: pointer;
@@ -87,4 +93,102 @@ margin:20%
     
 
   }
+ 
+  .pub{
+    height: 300px;
+    Width:500px;
+    position: relative;
+    top:200px;
+    left: 200px;
+    border-radius: 25px;
+    border-width:200px;
+    border: groove rgb(228, 72, 72);
+    color:white;
+    text-align: center;
+    margin-top: -150px;
+  }
+  .pub img {
+    border-radius: 25px;
+    height: 200px;
+  }
+  .pub h2{
+    color:rgb(243, 18, 18);
+  }
+  .welcome{
+    transform: rotate(20deg) scale(1,1.2);
+margin-top: 150px;
+margin-bottom: 50px;
+transition:transform 2s;
+
+  }
+  .welcome:hover{
+    transform: rotate(-20deg) scale(1,1.3);
+margin-top: 120px;
+margin-bottom: 50px;
+
+  } 
   
+  .presentation{
+    color:white;
+    text-align: center;
+    width:450px;
+    margin-left:25%;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    text-justify: inter-word;
+    
+  }
+  .main-nav{
+    
+    top: 0;
+    position:fixed;
+   
+    z-index: 2;
+    justify-content: space-between;
+    margin-right:20px;
+    margin-bottom: 50px;
+   
+   
+  }
+  .main-nav a{
+    text-decoration: none;
+    color: blue;
+    font-weight: 800px;
+    font-size:larger;
+  }
+  /* style for the knowmore component */
+  .knowmorecard{
+    display: flex;
+    position:absolute;
+    top:80px;
+    left:20%;
+  }
+  .knowmorecard:hover{
+    transform:scale(1,1.1);
+    transition: transform 2s;
+  }
+  .tadhmin{
+    margin-top: 50px;
+    margin-left: 100px;
+  }
+  .back{
+  position:fixed;
+    top:80px;
+    left:40px;
+  }
+  .home{
+    position:fixed;
+    top:120px;
+    left:40px;
+
+  }
+  /* style for notfound page */
+  .notfound{
+    height: 100%;
+    width:50%;
+    background-image:url(/public/ERREUR.png);
+    background-size: cover;
+    z-index: 4;
+    position: fixed;
+
+  }

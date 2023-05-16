@@ -4,10 +4,12 @@ import React from 'react'
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import ReactStars from "react-rating-stars-component";
+import { Link } from 'react-router-dom';
 // the main function that use a props of the data
 const MovieCard = ({movie}) => {
  
  return (
+  <Link to ={`/movie/${movie.title}`}>
   <div className='moviecard'>
   <Card style={{ width: '17rem'}}>
   
@@ -23,13 +25,14 @@ const MovieCard = ({movie}) => {
     size={24}
     value={movie.rating}
     activeColor="#ffd700"
-  />,
+  />
   </div>{movie.rating}
   </ListGroup>
 
 </Card>
 
 </div>
+</Link>
   )
 }
 // exporation of the component
